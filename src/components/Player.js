@@ -16,10 +16,11 @@ const Player = (props) => {
 }
 
 Player.propTypes = {
-  name: React.PropTypes.string.isRequired,
-  score: React.PropTypes.number.isRequired,
-  onRemove: React.PropTypes.func.isRequired,
-  onScoreChange: React.PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
+  score: PropTypes.number.isRequired,
+  removePlayer: PropTypes.func.isRequired,
+  updatePlayerScore: PropTypes.func.isRequired,
 };
 
 export default Player
